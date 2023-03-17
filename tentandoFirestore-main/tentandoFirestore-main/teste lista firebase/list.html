@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista 2</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <main id="main" >
+        <div id="app">
+        <div class="bloco_tarefas_pessoais" id="bloco_tarefas_pessoais">
+           <div class="titulo_tp">
+           <h1>
+               LISTA 2
+           </h1>
+           <button class="btn_add" onclick=""> adicionar Tarefa</button>
+           <label>Buscar</label>
+           <input type="text" id="searchItem">
+           <button class="btn_add" v-on:click="atualizar()">buscar</button>
+          
+            <div class="container_tp" v-for="informacao in infos" :key:="informacao.uid">
+                <h2 class="titulo_tp"> {{informacao.nome}}</h2>
+                <div class="btn_container">
+                <button> Feito</button>
+                </div>
+                </div>
+
+           </div>
+       </div>
+       </div>
+    
+</body>
+<script>
+    
+</script>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore-compat.js"></script>
+<script src="list_.js"></script>
+</html>
